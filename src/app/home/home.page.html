@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      AppConsultas
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -20,6 +20,30 @@
   </ion-header>
   
   <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Tabla de amortizacion</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Como hacer retenciones</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Obligaciones de Ruc</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Conoce a tu proveedor</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Repositorio legal</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Links de interes</ion-label>
+    </ion-item>
+    <ion-item [routerLink]="inicio">
+      <ion-label>Capacitación On-Line</ion-label>
+    </ion-item>
   </ion-list>
+  
+  <!-- <ion-list>
+    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
+  </ion-list> -->
 </ion-content>
